@@ -89,16 +89,16 @@
 - 7 -> да
 - 1 -> нет
 '''
-# day = int(input("Введите номер дня недели: "))
+# day = int(input("Input the number of the day of the week: "))
 
 # def weekend(d):
 #     if d > 0 and d < 8:
 #         if d < 6:
-#             print (f'День {d} - рабочий день :(NO)')
+#             print (f'Day {d} - working day: (NO)')
 #         else:
-#             print (f'День {d} Выходной!!!(YES)')
+#             print (f'Day {d} is Weekend!!! (YES)')
 #     else:
-#         print (f"Вы ввели не день недели, попробуйте числа от 1 до 7!")
+#         print (f"You didn't enter a day of the week, try numbers from 1 to 7!")
 # weekend(day)
 
 '''
@@ -111,8 +111,8 @@
 - x=-34; y=-30 -> 3
 '''
 
-x = int(input('Enter the x-coordinate: '))
-y = int(input('Enter a y-coordinate: '))
+x = int(input('Input the x-coordinate: '))
+y = int(input('Input a y-coordinate: '))
 
 def quarter(x, y):
     if x > 0 and y > 0:
