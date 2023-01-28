@@ -157,18 +157,23 @@
 - A (3,6); B (2,1) -> 5,09
 - A (7,-5); B (1,-1) -> 7,21
 '''
-import math
+# import math
 
-xA = int(input("input X coordinat of A: "))
-yA = int(input("input Y coordinat of A: "))
-xB = int(input("input X coordinat of B: "))
-yB = int(input("input Y coordinat of B: "))
+# xA = int(input("Input X coordinat of A: "))
+# yA = int(input("Input Y coordinat of A: "))
+# xB = int(input("Input X coordinat of B: "))
+# yB = int(input("Input Y coordinat of B: "))
 
-def lineCoord(x1, y1, x2, y2):
-    x = x2 - x1
-    y = y2 - y1
-    lenghtAB = round(math.sqrt(x*x + y*y), 2)
-    return lenghtAB
+# def lineCoord(x1, y1, x2, y2):
+#     x = x2 - x1
+#     y = y2 - y1
+#     lenghtAB = round(math.sqrt(x*x + y*y), 2)
+#     return lenghtAB
 
-line = lineCoord(xA, yA, xB, yB)
-print(f"Distanse AB is {line}")
+# line = lineCoord(xA, yA, xB, yB)
+# print(f"Distanse AB is {line}")
+
+'''
+Напишите программу для проверки истинности утверждения
+¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z для всех значений предикат.
+'''
