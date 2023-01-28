@@ -89,14 +89,42 @@
 - 7 -> да
 - 1 -> нет
 '''
-day = int(input("Введите номер дня недели: "))
+# day = int(input("Введите номер дня недели: "))
 
-def weekend(d):
-    if d > 0 and d < 8:
-        if d < 6:
-            print (f'День {d} - рабочий день :(NO)')
-        else:
-            print (f'День {d} Выходной!!!(YES)')
+# def weekend(d):
+#     if d > 0 and d < 8:
+#         if d < 6:
+#             print (f'День {d} - рабочий день :(NO)')
+#         else:
+#             print (f'День {d} Выходной!!!(YES)')
+#     else:
+#         print (f"Вы ввели не день недели, попробуйте числа от 1 до 7!")
+# weekend(day)
+
+'''
+Напишите программу, которая принимает на вход координаты точки (X и Y), 
+причём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости, 
+в которой находится эта точка (или на какой оси она находится).
+Пример:
+- x=34; y=-30 -> 4
+- x=2; y=4-> 1
+- x=-34; y=-30 -> 3
+'''
+
+x = int(input('Enter the x-coordinate: '))
+y = int(input('Enter a y-coordinate: '))
+
+def quarter(x, y):
+    if x > 0 and y > 0:
+        print("This point on 1st quater")
+    elif x < 0 and y > 0:
+        print("This point on 2st quater")
+    elif x < 0 and y < 0:
+        print("This point on 3st quater")
+    elif x > 0 and y < 0:
+        print("This point on 4st quater")
     else:
-        print (f"Вы ввели не день недели, попробуйте числа от 1 до 7!")
-weekend(day)
+        print("Its imposible at this task!")
+
+quarter(x, y)
+
