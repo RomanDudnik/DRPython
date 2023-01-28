@@ -70,13 +70,33 @@
 # 3 2 1 -> no
 '''
 
-n = int(input('Input the number of the first row: '))
-m = int(input('Input the number of the second row: '))
-k = int(input('Input the required number of sections: '))
+# n = int(input('Input the number of the first row: '))
+# m = int(input('Input the number of the second row: '))
+# k = int(input('Input the required number of sections: '))
 
-if n == k or m == k and n > 1 and m > 1:
-    print(f"You will manage to get {k} sections with one rift (YES)")
-elif n == k or m == k and n >= 1 and m >= 1:
-    print(f"You will get your {k} sections without breaking (NO)")
-else:
-    print(f"Can't get {k} sections with a single rift (NO)")
+# if n == k or m == k and n > 1 and m > 1:
+#     print(f"You will manage to get {k} sections with one rift (YES)")
+# elif n == k or m == k and n >= 1 and m >= 1:
+#     print(f"You will get your {k} sections without breaking (NO)")
+# else:
+#     print(f"Can't get {k} sections with a single rift (NO)")
+
+'''
+Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, 
+является ли этот день выходным.
+Пример:
+- 6 -> да
+- 7 -> да
+- 1 -> нет
+'''
+day = int(input("Введите номер дня недели: "))
+
+def weekend(d):
+    if d > 0 and d < 8:
+        if d < 6:
+            print (f'День {d} - рабочий день :(NO)')
+        else:
+            print (f'День {d} Выходной!!!(YES)')
+    else:
+        print (f"Вы ввели не день недели, попробуйте числа от 1 до 7!")
+weekend(day)
