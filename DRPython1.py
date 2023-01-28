@@ -133,19 +133,42 @@
 показывает диапазон возможных координат точек в этой четверти (x и y).
 '''
 
-quarter = int(input("Input the quarter number in the coordinate plane: "))
+# quarter = int(input("Input the quarter number in the coordinate plane: "))
 
-def valueQ (n):
-    if n == 1:
-        print("1st quater X > 0, Y > 0")
-    elif n == 2:
-        print("2st quater X < 0, Y > 0")
-    elif n == 3:
-        print("3st quater X < 0, Y < 0")
-    else:
-        print("4th quater X > 0, Y < 0")
+# def valueQ (n):
+#     if n == 1:
+#         print("1st quater X > 0, Y > 0")
+#     elif n == 2:
+#         print("2st quater X < 0, Y > 0")
+#     elif n == 3:
+#         print("3st quater X < 0, Y < 0")
+#     else:
+#         print("4th quater X > 0, Y < 0")
 
-if quarter >= 1 and quarter <=4:
-    valueQ(quarter)
-else:
-    print("Its not number of quater! Input a number from 1 to 4")
+# if quarter >= 1 and quarter <=4:
+#     valueQ(quarter)
+# else:
+#     print("Its not number of quater! Input a number from 1 to 4")
+
+'''
+Напишите программу, которая принимает на вход координаты двух точек и 
+находит расстояние между ними в 2D пространстве.
+Пример:
+- A (3,6); B (2,1) -> 5,09
+- A (7,-5); B (1,-1) -> 7,21
+'''
+import math
+
+xA = int(input("input X coordinat of A: "))
+yA = int(input("input Y coordinat of A: "))
+xB = int(input("input X coordinat of B: "))
+yB = int(input("input Y coordinat of B: "))
+
+def lineCoord(x1, y1, x2, y2):
+    x = x2 - x1
+    y = y2 - y1
+    lenghtAB = round(math.sqrt(x*x + y*y), 2)
+    return lenghtAB
+
+line = lineCoord(xA, yA, xB, yB)
+print(f"Distanse AB is {line}")
