@@ -111,20 +111,41 @@
 - x=-34; y=-30 -> 3
 '''
 
-x = int(input('Input the x-coordinate: '))
-y = int(input('Input a y-coordinate: '))
+# x = int(input('Input the x-coordinate: '))
+# y = int(input('Input a y-coordinate: '))
 
-def quarter(x, y):
-    if x > 0 and y > 0:
-        print("This point on 1st quater")
-    elif x < 0 and y > 0:
-        print("This point on 2st quater")
-    elif x < 0 and y < 0:
-        print("This point on 3st quater")
-    elif x > 0 and y < 0:
-        print("This point on 4st quater")
+# def quarter(x, y):
+#     if x > 0 and y > 0:
+#         print("This point on 1st quater")
+#     elif x < 0 and y > 0:
+#         print("This point on 2st quater")
+#     elif x < 0 and y < 0:
+#         print("This point on 3st quater")
+#     elif x > 0 and y < 0:
+#         print("This point on 4st quater")
+#     else:
+#         print("Its imposible at this task!")
+
+# quarter(x, y)
+
+'''
+Напишите программу, которая по заданному номеру четверти, 
+показывает диапазон возможных координат точек в этой четверти (x и y).
+'''
+
+quarter = int(input("Input the quarter number in the coordinate plane: "))
+
+def valueQ (n):
+    if n == 1:
+        print("1st quater X > 0, Y > 0")
+    elif n == 2:
+        print("2st quater X < 0, Y > 0")
+    elif n == 3:
+        print("3st quater X < 0, Y < 0")
     else:
-        print("Its imposible at this task!")
+        print("4th quater X > 0, Y < 0")
 
-quarter(x, y)
-
+if quarter >= 1 and quarter <=4:
+    valueQ(quarter)
+else:
+    print("Its not number of quater! Input a number from 1 to 4")
