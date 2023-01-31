@@ -9,23 +9,44 @@
 '''
 # import random
 
-# n = int(input('Input number of coins: '))
-# sum_0side = 0
-# sum_1side = 0
+# def inputCoinsNum(n):
+#     while n <= 0:
+#         n = int(input('Please input a positive number of coins: '))
+#     return (n)
 
-# for i in range(1, n + 1):
-#     side = random.randint(0,1)
-#     print(f'{i} coin is "{side}" side ')
-#     if side == 0:
-#         sum_0side += 1 
+# def coinsToSide(n):
+#     sum_0side = 0
+#     sum_1side = 0
+
+#     for i in range(1, n + 1):
+#         side = random.randint(0,1)
+#         print(f'#{i} coin is "{side}" side ')
+#         if side == 0:
+#             sum_0side += 1 
+#         else:
+#             sum_1side += 1
+#     return(sum_0side, sum_1side)
+
+# def minFlipSide(n, m):
+#     print(f'|{n} coins "0" side| {m} coins "1" side|')
+#     print()  
+    
+#     if n == 0 or m == 0:
+#         if m == 0:
+#            print(f'All {n} coins are on side "0"')
+#         else:
+#            print(f'All {m} coins are on side "1"')
+#     elif n < m:
+#         print(f'You need to flip {n} coins with side "0"')
+#     elif n > m:
+#         print(f'You need to flip {m} coins with side "1"')
 #     else:
-#         sum_1side += 1
-# if sum_0side == sum_1side:
-#     print(f'You need to flip {sum_0side} coins with any side "0" or "1"')            
-# elif sum_0side > sum_1side:
-#     print(f'You need to flip {sum_1side} coins with side "1"')
-# else:
-#     print(f'You need to flip {sum_0side} coins with side "0"')
+#         print(f'You need to flip {n} coins with any side "0" or "1"')
+
+        
+# n = int(input('Input number of coins: '))
+# (sum_0, sum_1) = coinsToSide(inputCoinsNum(n))
+# minFlipSide(sum_0, sum_1)
 
     
 '''
