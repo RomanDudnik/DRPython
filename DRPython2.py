@@ -7,9 +7,27 @@
 5 -> 1 0 1 1 0
 2
 '''
+# import random
 
+# n = int(input('Input number of coins: '))
+# sum_0side = 0
+# sum_1side = 0
 
+# for i in range(1, n + 1):
+#     side = random.randint(0,1)
+#     print(f'{i} coin is "{side}" side ')
+#     if side == 0:
+#         sum_0side += 1 
+#     else:
+#         sum_1side += 1
+# if sum_0side == sum_1side:
+#     print(f'You need to flip {sum_0side} coins with any side "0" or "1"')            
+# elif sum_0side > sum_1side:
+#     print(f'You need to flip {sum_1side} coins with side "1"')
+# else:
+#     print(f'You need to flip {sum_0side} coins with side "0"')
 
+    
 '''
 Задача 12: Петя и Катя – брат и сестра. Петя – студент, а Катя –
 школьница. Петя помогает Кате по математике. Он задумывает два
