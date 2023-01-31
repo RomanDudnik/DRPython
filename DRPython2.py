@@ -58,8 +58,21 @@
 4 4 -> 2 2
 5 6 -> 2 3
 '''
+# s = 5
+# p = 6
 
+# def twoNumbersOutput(s, p):
+#     for x in range(1, 1001):
+#         y = s - x
+#         if x <= y and x * y == p:
+#             print()
+#             print(f'Sum {s} and product {p} of numbers -> {x} and {y}')
+#             print(s, p, '->', x, y)
+            
+# sum_numbers = int(input('Input the sum of two numbers(X,Y≤1000): '))
+# prod_numbers = int(input('Input product of two numbers(X,Y≤1000): '))
 
+# twoNumbersOutput(sum_numbers, prod_numbers) 
 
 '''
 Задача 14: Требуется вывести все целые степени двойки (т.е. числа
