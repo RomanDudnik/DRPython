@@ -3,6 +3,8 @@
 123 -> 6 (1 + 2 + 3)
 100 -> 1 (1 + 0 + 0)
 '''
+
+#Решение 1
 # number = int(input('Input a three-digit number: '))
 
 # def sumThreeDig(n):
@@ -10,7 +12,12 @@
 #     return(sum)
     
 # result = sumThreeDig(number)
-# print(f"The sum of the digits of {number} is  {result}")
+# print(f"The sum of the digits of {number} is  {result}")        
+
+#Решение 2
+# n = input('Введите трехзначное число: ')
+# print(int(n[0])+int(n[1])+int(n[2]))
+                
 
 '''
 # Задача 4: Петя, Катя и Сережа делают из бумаги журавликов. Вместе
