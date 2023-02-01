@@ -80,3 +80,19 @@
 ), не превосходящие числа N.
 10 -> 1 2 4 8
 '''
+def CorrectInpNum(n):
+    while n <= 0:
+        n = int(input('Please input a positive number: '))
+    return (n)
+
+def Degree2num(n):
+    degTable = list()
+    for i in range(n):
+        k = 2**i
+        if k <= n:
+            degTable.append(k)
+    print(f'{n} -> {degTable}')
+
+number = int(input('Input number: '))
+Degree2num(CorrectInpNum(number))
+
