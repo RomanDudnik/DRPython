@@ -74,25 +74,40 @@
 
 # twoNumbersOutput(sum_numbers, prod_numbers) 
 
+# Решение 2
+# x = int(input())
+# y = int(input())
+# for i in range(x):
+#     for j in range(y):
+#         if x == i + j and y == i * j:
+#             print(i, j)
+
+
 '''
 Задача 14: Требуется вывести все целые степени двойки (т.е. числа
 вида 2k
 ), не превосходящие числа N.
 10 -> 1 2 4 8
 '''
-def CorrectInpNum(n):
-    while n <= 0:
-        n = int(input('Please input a positive number: '))
-    return (n)
+# def CorrectInpNum(n):
+#     while n <= 0:
+#         n = int(input('Please input a positive number: '))
+#     return (n)
 
-def Degree2num(n):
-    degTable = list()
-    for i in range(n):
-        k = 2**i
-        if k <= n:
-            degTable.append(k)
-    print(f'{n} -> {degTable}')
+# def Degree2num(n):
+#     degTable = list()
+#     for i in range(n):
+#         k = 2**i
+#         if k <= n:
+#             degTable.append(k)
+#     print(f'{n} -> {degTable}')
 
-number = int(input('Input number: '))
-Degree2num(CorrectInpNum(number))
+# number = int(input('Input number: '))
+# Degree2num(CorrectInpNum(number))
 
+# Рещение 2
+# n = int(input())
+# i = 0
+# while 2 ** i <= n:
+#     print(2 ** i)
+#     i += 1
