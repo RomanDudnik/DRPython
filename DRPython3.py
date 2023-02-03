@@ -9,8 +9,14 @@
 3
 -> 1
 '''
+from random import randint
 
+num = int(input('Input any number: '))
+array = [randint(-10, 10) for _ in range(1, num+1)]
 
+count_num = array.count(array[-1])
+print (array)
+print (f'-> {count_num}')
 
 '''
 Задача 18: Требуется найти в массиве A[1..N] самый близкий по
