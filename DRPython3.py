@@ -9,17 +9,17 @@
 3
 -> 1
 '''
-from random import randint
+# from random import randint
 
-num = int(input('Input any number: '))
-array = [randint(-10, 10) for _ in range(1, num+1)]
-print (array)
+# num = int(input('Input number array size: '))
+# array = [randint(-10, 10) for _ in range(1, num+1)]
+# print (array)
 
-X = int(input('Input any number: '))
+# x = int(input('Input any number: '))
 
-count_num = array.count(X)
+# count_num = array.count(x)
 
-print (f'-> {count_num}')
+# print (f'-> {count_num}')
 
 '''
 Задача 18: Требуется найти в массиве A[1..N] самый близкий по
@@ -33,14 +33,35 @@ print (f'-> {count_num}')
 6
 -> 5
 '''
+from random import randint
 
-# mod = 0
-# for i in list1:
-#     if i == x - mod or i == x + mod:
-#         print(i)
-#         break
-#     mod+=1
+def searchCloseNum(array):
+    array.append(x)
+    print(array)
+    array.sort()
+    print(array)
+    
+    if x == array[0]:
+        print(array[1])
+    elif x == array[-1]:
+        print(array[-2])
+    else:
+        index_x = array.index(x)
+        i0 = index_x - 1
+        i1 = index_x + 1
+        if x - array[i0] < array[i1] - x:
+            print(array[i0])
+        elif x - array[i0] > array[i1] - x:
+            print(array[i1])
+        else:
+            print(array[i0], array[i1])
 
+
+num = int(input('Input number array size: '))
+new_list = [randint(-10, 10) for _ in range(1, num+1)]
+print (new_list)
+x = int(input('Input a number to search in the array: '))
+searchCloseNum(new_list)
 
 '''
 Задача 20: В настольной игре Скрабл (Scrabble) каждая буква имеет определенную
