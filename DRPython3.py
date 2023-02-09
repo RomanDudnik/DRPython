@@ -9,17 +9,17 @@
 3
 -> 1
 '''
-# from random import randint
+from random import randint
 
-# num = int(input('Input number array size: '))
-# array = [randint(-10, 10) for _ in range(1, num+1)]
-# print (array)
+array_size = int(input('Input number array size: '))
+array = [randint(-10, 10) for _ in range(1, array_size+1)]
+print (array)
 
-# x = int(input('Input any number: '))
+x = int(input('Input any number: '))
 
-# count_num = array.count(x)
+count_num = array.count(x)
 
-# print (f'-> {count_num}')
+print (f'-> {count_num}')
 
 '''
 Задача 18: Требуется найти в массиве A[1..N] самый близкий по

@@ -9,7 +9,11 @@
 3 6 9 12 15 18
 6 12
 '''
+from random import randint
 
+num = int(input('Input number array size: '))
+array = [randint(-10, 10) for _ in range(1, num+1)]
+print (array)
 
 
 
