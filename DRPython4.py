@@ -22,8 +22,8 @@ set_size2 = int(input('Input second number array size: '))
 set1 = randArray(set_size1)
 set2 = randArray(set_size2)
 
-double_set = list(set(set1) & set(set2))
-print(*double_set)
+double_num_set = list(set(set1) & set(set2))
+print(*double_num_set)
 
 '''
 Задача 24: В фермерском хозяйстве в Карелии выращивают чернику. Она растет на
