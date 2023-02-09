@@ -33,35 +33,33 @@
 6
 -> 5
 '''
-from random import randint
+# from random import randint
 
-def searchCloseNum(array):
-    array.append(x)
-    print(array)
-    array.sort()
-    print(array)
+# def searchCloseNum(array, x):
+#     array.append(x)
+#     array.sort()
     
-    if x == array[0]:
-        print(array[1])
-    elif x == array[-1]:
-        print(array[-2])
-    else:
-        index_x = array.index(x)
-        i0 = index_x - 1
-        i1 = index_x + 1
-        if x - array[i0] < array[i1] - x:
-            print(array[i0])
-        elif x - array[i0] > array[i1] - x:
-            print(array[i1])
-        else:
-            print(array[i0], array[i1])
+#     if x == array[0]:
+#         print(array[1])
+#     elif x == array[-1]:
+#         print(array[-2])
+#     else:
+#         index_x = array.index(x)
+#         i0 = index_x - 1
+#         i1 = index_x + 1
+#         if x - array[i0] < array[i1] - x:
+#             print(array[i0])
+#         elif x - array[i0] > array[i1] - x:
+#             print(array[i1])
+#         else:
+#             print(array[i0], array[i1])
 
 
-num = int(input('Input number array size: '))
-new_list = [randint(-10, 10) for _ in range(1, num+1)]
-print (new_list)
-x = int(input('Input a number to search in the array: '))
-searchCloseNum(new_list)
+# size_array = int(input('Input number array size: '))
+# new_list = [randint(-10, 10) for _ in range(1, size_array+1)]
+# print (new_list)
+# num = int(input('Input a number to search in the array: '))
+# searchCloseNum(new_list, num)
 
 '''
 Задача 20: В настольной игре Скрабл (Scrabble) каждая буква имеет определенную
@@ -90,29 +88,24 @@ searchCloseNum(new_list)
 12
 '''
 
-
-
-# def calculate_word_value(word):
-#     score = {
-#             'A': 1, 'E': 1, 'I': 1, 'O': 1, 'U': 1, 'L': 1, 'N': 1, 'S': 1, 'T': 1, 'R': 1,'А': 1, 'В': 1, 'Е': 1, 'И': 1, 'Н': 1, 'О': 1, 'Р': 1, 'С': 1, 'Т': 1,
-#             'D': 2, 'G': 2,'Д': 2, 'К': 2, 'Л': 2, 'М': 2, 'П': 2, 'У': 2,
-#             'B': 3, 'C': 3, 'M': 3, 'P': 3,'Б': 3, 'Г': 3, 'Ё': 3, 'Ь': 3, 'Я': 3,
-#             'F': 4, 'H': 4, 'V': 4, 'W': 4, 'Y': 4,'Й': 4, 'Ы': 4,
-#             'K': 5,'Ж': 5, 'З': 5, 'Х': 5, 'Ц': 5, 'Ч': 5,
-#             'J': 8, 'X': 8,'Ш': 8, 'Э': 8, 'Ю': 8,
-#             'Q': 10, 'Z': 10,'Ф': 10, 'Щ': 10, 'Ъ': 10
-#         }
-#     return sum([score[c.upper()] for c in word])
-
-# word = input("Введите слово на русском или английском языке: ")
-# value = calculate_word_value(word)
-# print("Стоимость слова:", value)
-
-
-# score = 0
-# for i in word:
-#     for j in scores.keys():
-#         if i in scores[j]:
-#             score+=j
-#             break
-
+# def scrabblePoints(word):
+#     alphabet_score = {
+#                 1: ('A' , 'E' , 'I' , 'O' , 'U' , 'L' , 'N' , 'S' , 'T' , 'R' ,'А' , 'В' , 'Е' , 'И' , 'Н' , 'О' , 'Р' , 'С' , 'Т') ,
+#                 2: ('D' , 'G' ,'Д' , 'К' , 'Л' , 'М' , 'П' , 'У') ,
+#                 3: ('B' , 'C' , 'M' , 'P' ,'Б' , 'Г' , 'Ё' , 'Ь' , 'Я') ,
+#                 4: ('F' , 'H' , 'V' , 'W' , 'Y' ,'Й' , 'Ы') ,
+#                 5: ('K' ,'Ж' , 'З' , 'Х' , 'Ц' , 'Ч') ,
+#                 8: ('J' , 'X' ,'Ш' , 'Э' , 'Ю') ,
+#                 9: ('Q' , 'Z' ,'Ф' , 'Щ' , 'Ъ') 
+#                 }
+#     scores = 0
+#     for letter in word:
+#         for k,v in alphabet_score.items():
+#             if letter in v:
+#                 scores += k
+#                 break
+#     return scores    
+        
+# my_word = input('Input your word: ').upper()
+# print(f'word {my_word} is worth {scrabblePoints(my_word)} points')
+# # print(f'{my_word} -> {scrabblePoints(my_word)}')
