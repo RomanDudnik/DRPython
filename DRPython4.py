@@ -10,20 +10,20 @@
 6 12
 '''
 
-def randArray(num):
+def randArray(n):
     from random import randint
-    array = [randint(-20, 20) for _ in range(1, num+1)]
+    array = [randint(-20, 20) for _ in range(1, n+1)]
     print (*array)
     return array
 
 set_size1 = int(input('Input fist number array size: '))
 set_size2 = int(input('Input second number array size: '))
 
-set1 = randArray(set_size1)
-set2 = randArray(set_size2)
+set_nums1 = randArray(set_size1)
+set_nums2 = randArray(set_size2)
 
-double_num_set = list(set(set1) & set(set2))
-print(*double_num_set)
+double_nums_set = list(set(set_nums1) & set(set_nums2))
+print(*double_nums_set)
 
 '''
 Задача 24: В фермерском хозяйстве в Карелии выращивают чернику. Она растет на
