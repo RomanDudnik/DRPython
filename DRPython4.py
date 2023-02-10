@@ -12,7 +12,7 @@
 
 def randArray(n):
     from random import randint
-    array = [randint(-20, 20) for _ in range(1, n+1)]
+    array = [randint(-20, 20) for _ in range(n)]
     print (*array)
     return array
 
@@ -22,7 +22,7 @@ set_size2 = int(input('Input second number array size: '))
 set_nums1 = randArray(set_size1)
 set_nums2 = randArray(set_size2)
 
-double_nums_set = list(set(set_nums1) & set(set_nums2))
+double_nums_set = sorted(list(set(set_nums1) & set(set_nums2)))
 print(*double_nums_set)
 
 '''
