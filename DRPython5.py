@@ -6,8 +6,18 @@ A = 3; B = 5 -> 243 (3⁵)
 A = 2; B = 3 -> 8
 '''
 
+# def exponent(a,b):
+#     if (b == 0):
+#         a = 1
+#         return a
+#     elif b == 1 :
+#         return a
+#     return a * exponent(a, b-1)
+    
 
-
+# num = int(input('Input your number: '))
+# exp = int(input('Input exp number: '))
+# print(f'{num} to the power of {exp} will be -> {exponent(num,exp)}')
 
 
 '''
@@ -18,3 +28,16 @@ A = 2; B = 3 -> 8
 2 2
 4
 '''
+# def sumNum(a, b):
+#     if a == 0 or b == 0:
+#         if a > b:
+#             return a
+#         return b
+#     elif (b == 1):
+#         return a + 1
+#     return sumNum(a+1, b-1)
+        
+# num_1 = int(input('Input first Positive! number: '))  
+# num_2 = int(input('Input second Positive! number: '))
+# print(sumNum(num_1, num_2))
+
