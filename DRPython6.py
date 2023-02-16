@@ -10,6 +10,17 @@ an = a1 + (n-1) * d.
 Вывод: 7 9 11 13 15  
 '''
 
+def seqElemArray(n, d, a):
+    array=[]
+    for i in range (1, a + 1):
+        array.append(n + d * (i-1))
+    return array
+        
+
+first_num = int(input('Input fist number: '))
+diff_num = int(input('Input difference number: '))
+amount_elems = int(input('Input number of array elements: '))
+print(seqElemArray(first_num, diff_num, amount_elems))
 
 '''
 Задача 32: Определить индексы элементов массива (списка),
