@@ -14,13 +14,19 @@ an = a1 + (n-1) * d.
 #     array=[]
 #     for i in range (1, a + 1):
 #         array.append(n + d * (i-1))
-#     return array
-        
+#     return array   
 
 # first_num = int(input('Input fist number: '))
 # diff_num = int(input('Input difference number: '))
 # amount_elems = int(input('Input number of array elements: '))
 # print(seqElemArray(first_num, diff_num, amount_elems))
+
+"эталон)))"
+# a1 = int(input())
+# d = int(input())
+# n = int(input())
+# for i in range(n):
+# print(a1 + i * d)
 
 '''
 Задача 32: Определить индексы элементов массива (списка),
@@ -56,3 +62,12 @@ array = randArray(array_size)
 min_range = int(input('Input min range number:'))
 max_range = int(input('Input max range number:'))
 print(indexRangeArray(array, min_range, max_range))
+
+
+"эталон)))"
+# list_1 = [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7]
+# min_number = int(input())
+# max_number = int(input())
+# for i in range(len(list_1)):
+# if min_number <= list_1[i] <= max_number:
+# print(i)
