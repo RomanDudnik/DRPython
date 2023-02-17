@@ -11,9 +11,10 @@ an = a1 + (n-1) * d.
 '''
 
 # def seqElemArray(n, d, a):
-#     array=[]
-#     for i in range (1, a + 1):
-#         array.append(n + d * (i-1))
+#     array = [n = (i - 1) * d for i in range(1, n + 1)]    # через listcomprications
+#     # array = []
+#     # for i in range (1, a + 1):
+#     #     array.append(n + d * (i-1))
 #     return array   
 
 # first_num = int(input('Input fist number: '))
@@ -71,3 +72,10 @@ print(indexRangeArray(array, min_range, max_range))
 # for i in range(len(list_1)):
 # if min_number <= list_1[i] <= max_number:
 # print(i)
+
+# + вариант
+# range_list = [i for i in range(
+#     len(num_list)) if num_list[i] >= minimum and num_list[i] <= maximum]
+
+# out_red(range_list)
+
