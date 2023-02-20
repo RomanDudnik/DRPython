@@ -14,6 +14,43 @@
 Вывод:
 Парам пам-пам
 '''
+"Решение 1"
+
+# def PuhSongVolwes(song):
+#     volwes = ['а', 'е', 'ё', 'и', 'о', 'у', 'э', 'ы', 'ю', 'я']
+#     num_volwes = list()
+#     for i in poem:
+#         count = 0
+#         for j in i:
+#             if j in volwes:
+#                 count += 1
+#         num_volwes.append(count)
+#     return num_volwes
+
+# def GodSong(num):     
+#     if len(set(num)) == 1:
+#         print('Парам пам-пам')
+#     print('Пам парам')
+
+# poem = list(map(str, input('Напишите стихотворение: ').lower().split()))
+
+# PuhSongVolwes(GodSong(poem))
+
+"Решение 2"
+
+# poem = list(map(str, input('Напишите стихотворение: ').lower().split()))
+# # print(poem)
+# volwes = 'аеёиоуэыюя'
+ 
+# num_volwes = [sum(x in volwes for x in y) for y in poem]
+# # print(num_volwes)
+
+# if len(set(num_volwes)) == 1 :
+#     res = "Парам пам-пам"  
+# res = "Пам парам"
+
+# print(res) 
+
 
 '''
 Задача 36: Напишите функцию print_operation_table(operation, num_rows=6, num_columns=6),
@@ -34,3 +71,15 @@ print_operation_table(lambda x, y: x * y)
 5 10 15 20 25 30
 6 12 18 24 30 36 
 '''
+
+def print_operation_table(op, rows, columns):
+    for i in range(1, rows + 1):
+        matrix = []
+        for j in range(1, columns + 1):
+            num_op = op(i, j)
+            matrix.append(num_op)
+        print (*matrix)
+
+num_rows = 6
+num_columns = 6            
+print_operation_table(lambda x, y: x * y, num_rows, num_columns)
