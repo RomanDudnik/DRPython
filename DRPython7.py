@@ -72,14 +72,15 @@ print_operation_table(lambda x, y: x * y)
 6 12 18 24 30 36 
 '''
 
-# def print_operation_table(op, rows, columns):
-#     for i in range(1, rows + 1):
-#         matrix = []
-#         for j in range(1, columns + 1):
-#             num_op = op(i, j)
-#             matrix.append(num_op)
-#         print (*matrix)
+def print_operation_table(op, rows, columns):
+    for i in range(1, rows + 1):
+        matrix = list()
+        for j in range(1, columns + 1):
+            num_op = op(i, j)
+            matrix.append(num_op)
+        # print (*matrix)
+        print('\t'.join([str(x) for x in matrix]))      #центрирование столбцов
 
-# num_rows = 6
-# num_columns = 6            
-# print_operation_table(lambda x, y: x * y, num_rows, num_columns)
+num_rows = 6
+num_columns = 6            
+print_operation_table(lambda x, y: x * y, num_rows, num_columns)
