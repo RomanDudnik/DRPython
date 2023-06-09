@@ -22,15 +22,15 @@
 #         side = random.randint(0,1)
 #         print(f'#{i} coin is "{side}" side ')
 #         if side == 0:
-#             sum_0side += 1 
+#             sum_0side += 1
 #         else:
 #             sum_1side += 1
 #     return(sum_0side, sum_1side)
 
 # def minFlipSide(n, m):
 #     print(f'|{n} coins "0" side| {m} coins "1" side|')
-#     print()  
-    
+#     print()
+
 #     if n == 0 or m == 0:
 #         if m == 0:
 #            print(f'All {n} coins are on side "0"')
@@ -43,12 +43,12 @@
 #     else:
 #         print(f'You need to flip {n} coins with any side "0" or "1"')
 
-        
+
 # n = int(input('Input number of coins: '))
 # (sum_0, sum_1) = coinsToSide(inputCoinsNum(n))
 # minFlipSide(sum_0, sum_1)
 
-    
+
 '''
 Задача 12: Петя и Катя – брат и сестра. Петя – студент, а Катя –
 школьница. Петя помогает Кате по математике. Он задумывает два
@@ -68,11 +68,11 @@
 #             print()
 #             print(f'Sum {s} and product {p} of numbers -> {x} and {y}')
 #             print(s, p, '->', x, y)
-            
+
 # sum_numbers = int(input('Input the sum of two numbers(X,Y≤1000): '))
 # prod_numbers = int(input('Input product of two numbers(X,Y≤1000): '))
 
-# twoNumbersOutput(sum_numbers, prod_numbers) 
+# twoNumbersOutput(sum_numbers, prod_numbers)
 
 # Решение 2
 # x = int(input())

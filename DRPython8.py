@@ -4,6 +4,7 @@
 для изменения и удаления данных.
 '''
 
+
 def print_records(file_name: str):
     with open(file_name, 'r', encoding='utf-8') as data:
         for line in data:
@@ -53,13 +54,15 @@ def find_records(file_name: str, char, condition):
 
 
 def check_id_record(file_name: str, text: str):
-    decision = input(f'Вы знаете id записи которую хотите {text}? 1 - да, 2 - нет, q - выйти\n')
+    decision = input(
+        f'Вы знаете id записи которую хотите {text}? 1 - да, 2 - нет, q - выйти\n')
     while decision not in ('1', 'q'):
         if decision != '2':
             print('Введены неверные данные')
         else:
             find_records(path, *find_char())
-        decision = input(f'Вы знаете id записи которую хотите {text}? 1 - да, 2 - нет, q - выйти\n')
+        decision = input(
+            f'Вы знаете id записи которую хотите {text}? 1 - да, 2 - нет, q - выйти\n')
     if decision == '1':
         record_id = input('Введите id, q - выйти\n')
         while not find_records(file_name, '0', record_id) and record_id != 'q':
@@ -69,10 +72,12 @@ def check_id_record(file_name: str, text: str):
 
 
 def confirmation(text: str):
-    confirm = input(f"Подтвердите {text} записи: y - да, n - нет\n")
+    confirm = input(
+        f"Подтвердите {text} записи: y - да, n - нет\n")
     while confirm not in ('y', 'n'):
         print('Введены неверные данные')
-        confirm = input(f"Подтвердите {text} записи: y - да, n - нет\n")
+        confirm = input(
+            f"Подтвердите {text} записи: y - да, n - нет\n")
     return confirm
 
 
@@ -112,7 +117,7 @@ try:                        # исключения try/except/finally
 except IOError:             # если нет файла он создается
     print('Создан новый справочник -> phone_book.txt ')
     file = open(path, 'w')
-finally:                    
+finally:
     file.close()
 
 actions = {'1': 'список',
@@ -124,10 +129,12 @@ actions = {'1': 'список',
 
 action = None
 while action != 'q':
-    print('Какое действие хотите совершить?', *[f'{i} - {actions[i]}' for i in actions])
+    print('Какое действие хотите совершить?',
+          *[f'{i} - {actions[i]}' for i in actions])
     action = input()
     while action not in actions:
-        print('Какое действие хотите совершить?', *[f'{i} - {actions[i]}' for i in actions])
+        print('Какое действие хотите совершить?',
+              *[f'{i} - {actions[i]}' for i in actions])
         action = input()
         if action not in actions:
             print('Введены неверные данные')

@@ -38,7 +38,7 @@
 # def searchCloseNum(array, x):
 #     array.append(x)
 #     array.sort()
-    
+
 #     if x == array[0]:
 #         print(array[1])
 #     elif x == array[-1]:
@@ -96,7 +96,7 @@
 #                 4: ('F' , 'H' , 'V' , 'W' , 'Y' ,'Й' , 'Ы') ,
 #                 5: ('K' ,'Ж' , 'З' , 'Х' , 'Ц' , 'Ч') ,
 #                 8: ('J' , 'X' ,'Ш' , 'Э' , 'Ю') ,
-#                 9: ('Q' , 'Z' ,'Ф' , 'Щ' , 'Ъ') 
+#                 9: ('Q' , 'Z' ,'Ф' , 'Щ' , 'Ъ')
 #                 }
 #     scores = 0
 #     for letter in word:
@@ -104,8 +104,8 @@
 #             if letter in v:
 #                 scores += k
 #                 break
-#     return scores    
-        
+#     return scores
+
 # my_word = input('Input your word: ').upper()
 # print(f'word {my_word} is worth {scrabblePoints(my_word)} points')
 # # print(f'{my_word} -> {scrabblePoints(my_word)}')

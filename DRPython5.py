@@ -13,7 +13,7 @@ A = 2; B = 3 -> 8
 #     elif b == 1 :
 #         return a
 #     return a * exponent(a, b-1)
-    
+
 
 # num = int(input('Input your number: '))
 # exp = int(input('Input exp number: '))
@@ -29,7 +29,7 @@ A = 2; B = 3 -> 8
 4
 '''
 # Решение по условию задачи:
-    
+
 # def sumNum(a, b):
 #     if a == 0 or b == 0:
 #         if a > b:
@@ -38,28 +38,30 @@ A = 2; B = 3 -> 8
 #     elif (b == 1):
 #         return a + 1
 #     return sumNum(a+1, b-1)
-        
-# num_1 = int(input('Input first Positive! number: '))  
+
+# num_1 = int(input('Input first Positive! number: '))
 # num_2 = int(input('Input second Positive! number: '))
 # print(f'{num_1} + {num_2} = {sumNum(num_1, num_2)}')
 
 # Решение задачи для любых целых чисел:
+
 
 def sumNum(a, b):
     if a == 0 or b == 0:
         if a > b:
             return a
         return b
-    
+
     elif b < 0:
         if (b == -1):
-                return a - 1
-        return sumNum(a - 1, b + 1)    
-        
+            return a - 1
+        return sumNum(a - 1, b + 1)
+
     elif (b == 1):
         return a + 1
     return sumNum(a + 1, b - 1)
-        
-num_1 = int(input('Input first number: '))  
+
+
+num_1 = int(input('Input first number: '))
 num_2 = int(input('Input second number: '))
 print(f'{num_1} + {num_2} = {sumNum(num_1, num_2)}')

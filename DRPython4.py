@@ -48,24 +48,24 @@
 9
 '''
 
-from random import randint
 
+
+
+from random import randint
 def randArray(n):
     array = [randint(1, 10) for _ in range(n)]
-    print (*array)
+    print(*array)
     return array
+
 
 def max3elemSum(array):
     n = len(array)
     array += array[:2]
     max_sum = 0
     for i in range(n):
-        max_sum = max(max_sum, array[i] + array[i+1] + array[i+2])
+        max_sum = max(max_sum, array[i] + array[i + 1] + array[i + 2])
     return max_sum
 
-n = int( input( 'Input the number of bushes on row: ' ) )
+
+n = int(input('Input the number of bushes on row: '))
 print(f'-> {max3elemSum(randArray(n))}')
-
-
-
-                
